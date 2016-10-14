@@ -1,0 +1,297 @@
+<body class="home">
+	
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 210px;
+font-size: 12px;
+color: #9CADD0;
+}
+
+/*
+ * Easy way to get horizontal mode, applicable via js options to gadget.
+ */
+
+.gfg-horizontal-container {
+  position : relative;
+}
+
+.gfg-horizontal-root {
+  height : 1.5em;
+  _height : 100%;
+  position : relative;
+  white-space : nowrap;
+  overflow : hidden;
+  text-align : center;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  border: 1px solid #AAAAAA;
+  padding : 5px;
+  margin-right : 80px;
+}
+
+.gfg-horizontal-root .gfg-title {
+  font-weight : bold;
+  background-color: #FFFFFF;
+  line-height : 1.5em;
+  overflow : hidden;
+  white-space : nowrap;
+  float : left;
+  padding-left : 10px;
+  padding-right : 12px;
+  border-right: 1px solid #AAAAAA;
+}
+
+.gfg-horizontal-root .gfg-title a {
+  color : #444444;
+  text-decoration : none;
+}
+
+.gfg-horizontal-root .gfg-entry {
+  width : auto;
+  height : 1.5em;
+  position : relative;
+  overflow : hidden;
+  text-align : left;
+  margin-top : 0px;
+  margin-left : 0px;
+  padding-left : 10px;
+}
+
+/* To allow correct behavior for overlay */
+.gfg-horizontal-root .gfg-entry .gf-result {
+  position : relative;
+  background-color : white;
+  width : 100%;
+  height : 100%;
+  line-height : 1.5em;
+  overflow : hidden;
+  white-space : nowrap;
+}
+
+.gfg-horizontal-root .gfg-list {
+  display : none;
+}
+
+/*
+ * FeedControl customizations.
+ */
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-snippet,
+.gfg-horizontal-root .gfg-entry .gf-result .gf-author {
+  display : none;
+}
+
+.gfg-horizontal-root .gfg-entry  .gf-result .gf-title {
+  color: #0000cc;
+  margin-right : 3px;
+  float : left;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer {
+  float : left;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer,
+.gfg-horizontal-root .gfg-entry .gf-result .gf-relativePublishedDate {
+  display : block;
+  color: #AAAAAA;
+}
+
+.gfg-branding {
+  white-space : nowrap;
+  overflow : hidden;
+  text-align : left;
+  position : absolute;
+  right : 0px;
+  top : 0px;
+  width : 80px;
+}
+
+.gfg-collapse-open, .gfg-collapse-closed {
+  background-repeat : no-repeat;
+  background-position : center;
+  cursor : pointer;
+  float : right;
+  width : 17px;
+  height : 20px;
+}
+
+.gfg-collapse-open {
+  background-image : url('arrow_open.gif');
+}
+
+.gfg-collapse-closed {
+  background-image : url('arrow_close.gif');
+}
+
+.gfg-collapse-href {
+  float : left;
+}
+
+.clearFloat {
+  clear : both;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://www.elephant-news.com/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+
+<div class="slider">
+	
+        <ul class="items">
+          <li><%=image_tag("img1.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>“Our<em> Mission</em> is to <em>Help</em></span></div>
+              <div class="wrapper"><strong>Elephants<em> Live</em> Chain-Free”</strong></div>
+            </div>
+          </li>
+          <li> <%=image_tag("img2.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>“Inspire hope,</span></div>
+              <div class="wrapper"><strong> health and happiness”</strong></div>
+            </div>
+          </li>
+          <li><%=image_tag("img3.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>"Give life a second chance"</span></div>
+              <!--<div class="wrapper"><strong>Many LIVES”</strong></div>-->
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+      
+   
+    <!-- / header -->
+    <!-- content -->
+    <div class="wrapper">
+        <h3>Welcome  to Elefriends101   </h3>
+        <p> <h2 style=" font-size: 22px">Elephant Care Facility, the only dedicated facility of its kind in Tamil Nadu. Here you can learn all about the facility, the elephants, why such a facility is needed, the people behind the facility and how you can help and become involved.</h2> </p>
+
+<p> <h2 style=" font-size: 22px ;text-align: justify"> At the Elephant Care Facility we are committed to providing injured, abused and neglected elephants with a new home where they can spend their days interacting with each other, roaming freely through the facility, wallowing in mud baths and receiving a varied natural diet and correct nutritional support all under the watchful eye of our expert veterinarian and care team.
+
+In return we expect nothing of the elephants, no rides, no tricks, no performances. They are free to simply be and live in peace in a safe, secure and compassionate environment.
+
+We hope you will find our website both interesting and informative and look forward to seeing you at the facility in the future
+.</h2> </p>
+     </div>
+      <div class="wrapper">
+         <h7>Our Elephants</h7> 
+      </div>    
+    <article id="content">
+      <div class="wrapper">
+        <div class="box11">
+          <div class="line1">
+            <div class="line2 wrapper">
+              <section class="col1">
+              	
+                <h2><strong>S</strong>andhya<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img1.jpg")%></figure>
+                </div>
+                Sandhyas Story <a href="#" class="button1 color2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h2 class="color2"><strong>I</strong>ndu<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img2.jpg")%></figure>
+                </div>
+                Indu's Story'<a href="#" class="button1 color2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h2 class="color3"><strong>J</strong>ayanthi<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img3.jpg")%></figure>
+                </div>
+                Jayanthi's Story <a href="#" class="button1 color2">Read More</a> </section>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+         <h7>Elephants Making News</h7> 
+      </div>   
+      <div class="wrapper">
+        <div class="box2">
+          <div class="line1">
+            <div class="line2 wrapper">
+              <section class="col1">
+                <h4><span>June 31</span>2016</h4>
+                <p class="pad_bot2"><strong>Indian team to bring back stranded elephant from Bangladesh</strong></p>
+                <p style="color: #ffffd8">Project Elephant director R K Srivastava told that it was decided to send the rescue team to the neighbouring country on August.</p>
+                <a href="http://indianexpress.com/article/india/india-news-india/indian-team-to-bring-back-stranded-elephant-from-bangladesh-2938015/" target="_blank"  class="button2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h4 class="color2"><span>August 26</span>2016</h4>
+                <p class="pad_bot2"><strong>3 Elephants Run Over By Passenger Train In West Bengal</strong></p>
+                	                <p style="color: #ffffd8">BANKURA, WEST BENGAL:  Three elephants were killed after a passenger train ran over them near Bishnupur of West Bengal's Bankura district on Friday night.</p>
+                <a href="http://www.ndtv.com/india-news/3-elephants-run-over-by-passenger-train-in-west-bengal-1450909" target="_blank" class="button2 color2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h4 class="color3"><span>Jul 27</span>2016</h4>
+                <p class="pad_bot2"><strong>In Kerala, An 86-Year-Old Elephant Caught In The Middle Of Traditions</strong></p>
+                <p style="color: #ffffd8">In Kerala, An 86-Year-Old Elephant Caught In The Middle Of Traditions</p>
+                <a href="http://www.ndtv.com/video/player/news/in-kerala-an-86-year-old-elephant-caught-in-the-middle-of-traditions/425292" target="_blank"  class="button2 color3">Read More</a> </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  <script type="text/javascript">
+$(window).load(function () {
+    $('.slider')._TMS({
+        preset: 'zabor',
+        easing: 'easeOutQuad',
+        duration: 800,
+        pagination: true,
+        banners: true,
+        waitBannerAnimation: false,
+        slideshow: 6000,
+        bannerShow: function (banner) {
+            banner.css({
+                right: '-700px'
+            }).stop().animate({
+                right: '0'
+            }, 600, 'easeOutExpo')
+        },
+        bannerHide: function (banner) {
+            banner.stop().animate({
+                right: '-700'
+            }, 600, 'easeOutExpo')
+        }
+    })
+    $('.pagination li').hover(function () {
+        if (!$(this).hasClass('current')) {
+            $(this).find('a').stop().animate({
+                backgroundPosition: '0 0'
+            }, 600, 'easeOutExpo', function () {
+                $(this).parent().css({
+                    backgroundPosition: '-20px 0'
+                })
+            });
+        }
+    }, function () {
+        if (!$(this).hasClass('current')) {
+            $(this).css({
+                backgroundPosition: '0 0'
+            }).find('a').stop().animate({
+                backgroundPosition: '-250px 0'
+            }, 600, 'easeOutExpo');
+        }
+    })
+})
+</script>
+     
+</body>

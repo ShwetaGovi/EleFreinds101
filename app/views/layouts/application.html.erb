@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EleFriends101</title>
+<meta charset="utf-8">
+
+<%= stylesheet_link_tag    'reset', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag    'layout', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag    'touchTouch', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'jquery-1.6.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'cufon-yui.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'cufon-replace.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'Vegur_700.font.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'Vegur_400.font.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'Vegur_300.font.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'jquery.easing.1.3.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'tms-0.3.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'tms_presets.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'backgroundPosition.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'atooltip.jquery.js', 'data-turbolinks-track': 'reload' %>
+
+<%= javascript_include_tag 'script.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'tabs.js', 'data-turbolinks-track': 'reload' %>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">.box1 figure{behavior:url("js/PIE.htc");}</style>
+<![endif]-->
+</head>
+<body id="page1">
+	<div id="background"></div>
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+    	
+      <div class="wrapper">
+        <h1><a href="/ele_friends/Home" id="logo"></a></h1>
+        
+        <nav>
+          <ul id="top_nav">
+            <li><a href="https://www.facebook.com/EleFriends101ECF" target="_blank"><%=image_tag("icon1.gif")%></a></li>
+            <li><a href="#"><%=image_tag("top_icon2.gif")%></a></li>
+            <li class="end"><a href="/ele_friends/Contact_Us"><%=image_tag("top_icon3.gif")%></a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul id="menu">
+            <li class="home"><a href="/ele_friends/Home">Home</a></li>
+            <li class="about"><a href="/ele_friends/About_Us">About Us</a></li>
+            <li class="news"><a href="/ele_friends/News">News & Events</a></li>
+            
+             <li class="gallery"><a href="/ele_friends/Gallery">Gallery</a></li>
+            <li class="donate"><a href="/ele_friends/Donate">How to Help</a></li>
+            <li class="contact"><a href="/ele_friends/Contact_Us">Contact</a></li>
+          
+
+        </ul>
+     
+        </nav>
+        
+       <h6></h6>
+       </div>
+     <div class="Logoname">
+              <span style="font-family:Adobe Caslon Pro Bold">ELEFRIENDS 101-ELEPHANT CARE FACILITY</span>
+              
+            </div>
+      
+        </header>
+       
+      	<%= yield %>
+    <!-- footer -->
+    <footer>
+      <div class="wrapper">
+      	
+      	<div class="wrapper"> <a href="#" id="footer_logo"><span>Colla</span>borators</a><br /><br />
+      		<ul id="icons">
+          <li><a href="https://www.facebook.com/EleFriends101ECF" target="_blank" class="normaltip"><%=image_tag("icon1.gif")%></a></li>
+          <li><a href="#" class="normaltip"><%=image_tag("icon2.gif")%></a></li>
+          <li><a href="#" class="normaltip"><%=image_tag("icon3.gif")%></a></li>
+        </ul>
+      <div class="wrapper">	<ul id="iconsl">
+      	<li><a href="http://www.treefoundationindia.org/" target="_blank" class="normaltip"><%=image_tag("tree.jpg")%></a></li>
+        <li><a href="http://www.wrrcbangalore.org/" target="_blank" class="normaltip"><%=image_tag("Wrrc.png")%></a></li>
+        </ul></div>
+        
+      </div>
+      <div class="wrapper">
+        <nav>
+          <ul id="footer_menu">
+            <li><a href="/ele_friends/Home">Home</a></li>
+            <li><a href="/ele_friends/About_Us">About Us</a></li>
+            <li><a href="/ele_friends/News">News &amp; Press</a></li>
+             <li><a href="/ele_friends/Gallery">Gallery</a></li>
+            <li><a href="/ele_friends/Donate">How to Help</a></li>
+            <li class="end"><a href="/ele_friends/Contact_Us">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="tel"><span>+91-44-</span>24 49 22 42</div>
+      </div>
+      <div id="footer_text">Copyright &copy; <a href="#">TreeFoundation</a> All Rights Reserved<br>
+        Design by <a target="_blank" href="TreeFoundation"></a></div>
+    </footer>
+    <!-- / footer -->
+  </div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+
+
+</body>
+</html>

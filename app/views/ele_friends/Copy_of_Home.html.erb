@@ -1,0 +1,235 @@
+<body class="home">
+	
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 210px;
+font-size: 12px;
+color: #9CADD0;
+}
+
+/*
+ * Easy way to get horizontal mode, applicable via js options to gadget.
+ */
+
+.gfg-horizontal-container {
+  position : relative;
+}
+
+.gfg-horizontal-root {
+  height : 1.5em;
+  _height : 100%;
+  position : relative;
+  white-space : nowrap;
+  overflow : hidden;
+  text-align : center;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  border: 1px solid #AAAAAA;
+  padding : 5px;
+  margin-right : 80px;
+}
+
+.gfg-horizontal-root .gfg-title {
+  font-weight : bold;
+  background-color: #FFFFFF;
+  line-height : 1.5em;
+  overflow : hidden;
+  white-space : nowrap;
+  float : left;
+  padding-left : 10px;
+  padding-right : 12px;
+  border-right: 1px solid #AAAAAA;
+}
+
+.gfg-horizontal-root .gfg-title a {
+  color : #444444;
+  text-decoration : none;
+}
+
+.gfg-horizontal-root .gfg-entry {
+  width : auto;
+  height : 1.5em;
+  position : relative;
+  overflow : hidden;
+  text-align : left;
+  margin-top : 0px;
+  margin-left : 0px;
+  padding-left : 10px;
+}
+
+/* To allow correct behavior for overlay */
+.gfg-horizontal-root .gfg-entry .gf-result {
+  position : relative;
+  background-color : white;
+  width : 100%;
+  height : 100%;
+  line-height : 1.5em;
+  overflow : hidden;
+  white-space : nowrap;
+}
+
+.gfg-horizontal-root .gfg-list {
+  display : none;
+}
+
+/*
+ * FeedControl customizations.
+ */
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-snippet,
+.gfg-horizontal-root .gfg-entry .gf-result .gf-author {
+  display : none;
+}
+
+.gfg-horizontal-root .gfg-entry  .gf-result .gf-title {
+  color: #0000cc;
+  margin-right : 3px;
+  float : left;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer {
+  float : left;
+}
+
+.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer,
+.gfg-horizontal-root .gfg-entry .gf-result .gf-relativePublishedDate {
+  display : block;
+  color: #AAAAAA;
+}
+
+.gfg-branding {
+  white-space : nowrap;
+  overflow : hidden;
+  text-align : left;
+  position : absolute;
+  right : 0px;
+  top : 0px;
+  width : 80px;
+}
+
+.gfg-collapse-open, .gfg-collapse-closed {
+  background-repeat : no-repeat;
+  background-position : center;
+  cursor : pointer;
+  float : right;
+  width : 17px;
+  height : 20px;
+}
+
+.gfg-collapse-open {
+  background-image : url('arrow_open.gif');
+}
+
+.gfg-collapse-closed {
+  background-image : url('arrow_close.gif');
+}
+
+.gfg-collapse-href {
+  float : left;
+}
+
+.clearFloat {
+  clear : both;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://www.elephant-news.com/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+
+<div class="slider">
+        <ul class="items">
+          <li><%=image_tag("img1.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>“Our<em>Mission</em>is to<em>Help</em></span></div>
+              <div class="wrapper"><strong>Elephants<em>Live</em>Chain-Free”</strong></div>
+            </div>
+          </li>
+          <li> <%=image_tag("img2.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>“Give Them What they</span></div>
+              <div class="wrapper"><strong>TRULY DESERVE”</strong></div>
+            </div>
+          </li>
+          <li><%=image_tag("img3.jpg")%>
+            <div class="banner">
+              <div class="wrapper"><span>“TOGETHER we can CHANGE</span></div>
+              <div class="wrapper"><strong>Many LIVES”</strong></div>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li id="banner1"><a href="https://www.facebook.com/EleFriends101ECF" target="_blank">Our<span>Mission</span></a></li>
+          <li id="banner2"><a href="#">Visit<span>volunteer</span></a></li>
+          <li id="banner3"><a href="#">Help<span>Elephants</span></a></li>
+
+        </ul>
+      </div>
+      
+   
+    <!-- / header -->
+    <!-- content -->
+    <article id="content">
+      <div class="wrapper">
+        <div class="box1">
+          <div class="line1">
+            <div class="line2 wrapper">
+              <section class="col1">
+                <h2><strong>S</strong>andhya<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img1.jpg")%></figure>
+                </div>
+                Sandhyas Story <a href="#" class="button1 color2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h2 class="color2"><strong>I</strong>ndu<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img2.jpg")%></figure>
+                </div>
+                Indu's Story'<a href="#" class="button1 color2">Read More</a> </section>
+              <section class="col1 pad_left1">
+                <h2 class="color3"><strong>J</strong>ayanthi<span></span></h2>
+                <div class="pad_bot1">
+                  <figure><%=image_tag("page1_img3.jpg")%></figure>
+                </div>
+                Jayanthi's Story <a href="#" class="button1 color2">Read More</a> </section>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h3>Our Mission</h3>
+        <p class="quot">To Let Elephnats Live Chain-Free<%=image_tag("quot2.png")%> </p>
+      </div>
+      <div class="wrapper">
+        <div class="box2">
+          <div class="line1">
+            <div class="line2 wrapper">
+              <section class="col1">
+             
+              <h4><span>Ele</span> News</h4>
+              <div id="body">
+             <div id="feedControl">Loading...</div>
+            </div>
+        </div>
+                
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- / content -->
+</body>
